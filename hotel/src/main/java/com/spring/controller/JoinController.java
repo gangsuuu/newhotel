@@ -17,7 +17,6 @@ import com.hotel.vo.HotelMemberVO;
 public class JoinController {
 	@Autowired
 	private MemberServiceImpl memberService;
-	
 
 	/*
 	 * joinCheck.do  회원가입 처리문
