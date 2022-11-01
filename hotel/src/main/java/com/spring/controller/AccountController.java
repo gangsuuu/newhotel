@@ -62,19 +62,40 @@ public class AccountController {
 	 				회원가입
 	 *******************************************/
 	
-	/**
+	/*
+	 * joinstep.do 
+	 */
+	@RequestMapping(value="shillaStay/join/termsOfService.do", method=RequestMethod.GET)
+	public String joinstep() {
+		return "user/account/termsofservice";
+		}
+	
+	/**s
 	 *	회원가입 폼  
 	 */
 	@RequestMapping(value="shillaStay/join/information.do", method=RequestMethod.GET)
 	public String join() {
 		return "user/account/join";
 	}
+	/*
 	/**
 	 * 마케팅 수신 동의 
 	 */
 	@RequestMapping(value="shillaStay/join/marketing.do", method=RequestMethod.GET)
 	public String join_agreeMarket() {
 	return "user/account/join";
+	}
+	
+	/******************************************
+				회원정보
+	 *******************************************/
+	
+	/**
+	 * 마케팅 수신 동의 
+	 */
+	@RequestMapping(value="shillaStay/user/mypage.do", method=RequestMethod.GET)
+	public String mypage() {
+	return "user/mypage/mypage";
 	}
 	
 }

@@ -85,7 +85,7 @@ if(join_result == 'ok'){
 	                        <p>더 큰 혜택과 편리함을 누릴 수 있습니다.</p>
 	                    </div>
                     <div>
-                        <a class="login-join-acount" href="http://localhost:9000/hotel/shillaStay/join/information.do">회원가입</a>
+                        <a class="login-join-acount" href="http://localhost:9000/hotel/shillaStay/join/termsOfService.do">회원가입</a>
                     </div>
                 </div>
             </div>

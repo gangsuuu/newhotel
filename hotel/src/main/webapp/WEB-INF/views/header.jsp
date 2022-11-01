@@ -25,8 +25,8 @@
             <c:choose>
                <c:when test="${sessionScope.svo == null}">
                   <div class='header_top_guest theme2_guest'>
-                     <a class='header_login' href='http://localhost:9000/hotel/login.do'>로그인</a>
-                     
+                     <a class='header_login' href='http://localhost:9000/hotel/shillaStay/login.do'>로그인</a>
+                     <a href='http://localhost:9000/hotel/shillaStay/user/mypage.do'>MyPage</a>
                   </div>
                </c:when>
                
