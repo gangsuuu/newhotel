@@ -10,6 +10,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<%@ include file="../../header.jsp" %>
 <div class="content">
 		
 		<form name="joinStep"  action="joinStep.do"  method="get">
@@ -352,7 +353,7 @@ function jsJoinStep1Validation() {
 }
 </style>
 <div class="pageTerms">
-<h1>Paradise Rewards 이용 약관</h1>
+<h1>Shilla Rewards 이용 약관</h1>
 
 <p class="articleTitle">제1조 목 적</p>
 
@@ -1016,7 +1017,7 @@ function jsJoinStep1Validation() {
 					<div class="btnJoin">
 						<!-- 다음 버튼 -->
 						<button  type="button"
-						onclick="location.href = 'http://localhost:9000/hotel/join.do';"
+						onclick="location.href = 'http://localhost:9000/hotel/shillaStay/join/information.do';"
 						class="joincolor">다음</button>
 
 					</div>
@@ -1030,5 +1031,6 @@ function jsJoinStep1Validation() {
 		
 </form>
 </div>
+<%@ include file="../../footer.jsp" %>
 </body>
 </html>

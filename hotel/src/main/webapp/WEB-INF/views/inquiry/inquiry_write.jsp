@@ -117,6 +117,7 @@
 .selector {word-spacing: 10px;}
 .content_list_two{ margin-top: -25px; font-weight: 500; margin-left: 10px; height: 20px; display: block; align-items: center; font-size: 14px; color:var(--hub-font);}
 
+#passguide { color: gray; font-size: 12px; margin-left: 10px; }
 </style>
 
 </head>
@@ -230,6 +231,7 @@
 			    							<span>
 				    							<label id="passwordlable"><span class="ast">*</span>비밀번호</label>
 				    							<input type="password" name="secretnum" id="secretnum">
+				    							<span id="passguide">정수 4자리를 입력해주세요.</span>
 			    							</span>
 										</div>
 									</td>	
@@ -287,7 +289,7 @@
 	<%@ include file="../footer.jsp" %>
 	<script>
  	$("[data-nav=service]").css("display","block");
- 	$("[data-nav=service]").children().eq(3).children().first().css("color","white");
+ 	$("[data-nav=service]").children().eq(2).children().first().css("color","white");
  	</script>
 </body>
 </html>

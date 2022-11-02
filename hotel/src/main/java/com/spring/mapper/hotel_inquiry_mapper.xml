@@ -146,6 +146,14 @@
 			SECRET=#{secret}, SECRETNUM=#{secretnum} WHERE IID=#{iid}
 	
 	</update>
+	
+	<!-- inquiry updatenofile -->
+	<update id="updatenofile" parameterType="com.hotel.vo.HotelInquiryVO">
+		
+		UPDATE HOTEL_INQUIRY SET HOTELNAME=#{hotelname}, CATEGORY=#{category}, TITLE=#{title}, CONTENT=#{content}, SECRET=#{secret}, SECRETNUM=#{secretnum}
+		WHERE IID=#{iid}
+	
+	</update>
 		
 	<!-- inquiry list -->
 	<select id="list" parameterType="map" resultType="com.hotel.vo.HotelInquiryVO">

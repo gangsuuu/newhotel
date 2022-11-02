@@ -17,7 +17,6 @@ import com.hotel.vo.HotelMemberVO;
 public class JoinController {
 	@Autowired
 	private MemberServiceImpl memberService;
-	
 
 	/*
 	 * joinCheck.do  회원가입 처리문
@@ -47,13 +46,6 @@ public class JoinController {
 	public String join() {
 		return "/join/join";   // login 폴더안에 있는 login.jsp 파일을 의미 한다
 	} 
-	/*
-	 * joinstep.do 
-	 */
-	@RequestMapping(value="/joinstep.do", method=RequestMethod.GET)
-	public String joinstep() {
-		return "/join/joinstep";
-	}
 	
 	/*
 	 * id_check.do : 아이디 중복 

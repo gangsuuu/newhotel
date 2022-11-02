@@ -27,6 +27,9 @@ public interface InquiryService {
 	//문의글 수정 처리 
 	int getUpdate(HotelInquiryVO vo);
 	
+	//문의글 수정 처리 : 파일변경 안할 시 기존파일 유지
+	int getUpdateNoFile(HotelInquiryVO vo);
+	
 	//문의글 상세보기 
 	HotelInquiryVO getContent(String iid);
 	
