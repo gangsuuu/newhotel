@@ -62,19 +62,70 @@ public class AccountController {
 	 				회원가입
 	 *******************************************/
 	
-	/**
+	/*
+	 * joinstep.do 
+	 */
+	@RequestMapping(value="shillaStay/join/termsOfService.do", method=RequestMethod.GET)
+	public String joinstep() {
+		return "user/account/termsofservice";
+		}
+	
+	/**s
 	 *	회원가입 폼  
 	 */
 	@RequestMapping(value="shillaStay/join/information.do", method=RequestMethod.GET)
 	public String join() {
 		return "user/account/join";
 	}
+	/*
 	/**
 	 * 마케팅 수신 동의 
 	 */
 	@RequestMapping(value="shillaStay/join/marketing.do", method=RequestMethod.GET)
 	public String join_agreeMarket() {
 	return "user/account/join";
+	}
+	
+	/******************************************
+				회원정보
+	 *******************************************/
+	
+	/**
+	 *  마이페이지 
+	 */
+	@RequestMapping(value="shillaStay/user/mypage.do", method=RequestMethod.GET)
+	public String mypage() {
+	return "user/mypage/mypage";
+	}
+	
+	/**
+	 *  내정보 수정
+	 */
+	@RequestMapping(value="shillaStay/user/myinfoEdit.do", method=RequestMethod.GET)
+	public String mypageedit() {
+		return "user/mypage/editmyinfo";
+	}
+	
+	/**
+	 *  예약확인리스트
+	 */
+	@RequestMapping(value="shillaStay/user/mybooklist.do", method=RequestMethod.GET)
+	public String mybooklist() {
+		return "user/mypage/mybook_list";
+	}
+	/**
+	 *  예약확인컨텐츠
+	 */
+	@RequestMapping(value="shillaStay/user/mybook.do", method=RequestMethod.GET)
+	public String mybookcontent() {
+		return "user/mypage/mybook_content";
+	}
+	/**
+	 *  객실북마크
+	 */
+	@RequestMapping(value="shillaStay/user/mybookmarke.do", method=RequestMethod.GET)
+	public String mybookbookmarke() {
+		return "user/mypage/mybook_bookmarke";
 	}
 	
 }

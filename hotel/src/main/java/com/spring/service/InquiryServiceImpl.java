@@ -90,6 +90,15 @@ public class InquiryServiceImpl implements InquiryService {
 	 public int getUpdate(HotelInquiryVO vo) { 
 		 return hotelinquiryDao.update(vo); 
 	  }
+	 
+	 /**
+	  * 문의글 수정 처리
+	  */
+		
+	@Override 
+	public int getUpdateNoFile(HotelInquiryVO vo) { 
+		return hotelinquiryDao.updatenofile(vo); 
+	}
 	  	
 	/**
 	 * 문의글 글쓰기 처리

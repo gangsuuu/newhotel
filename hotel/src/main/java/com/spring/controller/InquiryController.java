@@ -36,6 +36,15 @@ public class InquiryController {
 	@Autowired
 	private ReplyInquiryServiceImpl replyinquiryService;
 	
+	
+	/**
+	 * inquiry_faq.do : 자주묻는 질문
+	 */
+	@RequestMapping(value="/inquiry_faq.do", method=RequestMethod.GET)
+	public String inquiry_faq() {
+		return "/inquiry/inquiry_faq";
+	}	
+	
 	/**
 	 * 메인컨트롤러에 footer넣기
 	 * hotel_footer.do 호출
@@ -167,23 +176,36 @@ public class InquiryController {
 		
 		//기존파일이 존재하는 경우, 이름을 변수로 저장 - 맨위에 변수 선언!
 		String old_filename = vo.getIsfile();
-		
+		String pastIfile = vo.getIfile();
 		//수정하고 상세페이지 변경해주기
 		vo.setContent(vo.getContent().replace("\r\n","<br/>"));
-		
+				
 		//수정 시, 새로운파일을 선택했는지 안했는지 확인
-		vo = fileService.fileCheck(vo);
-		int result = inquiryService.getUpdate(vo);
-		
-		if(result == 1) {
-			// 새로운 파일을 upload폴더에 저장
-			fileService.fileSave(vo, request);
+		vo = fileService.update_fileCheck(vo);
+				
+		//수정 시, 파일선택안할 경우, 기존파일 유지하기
+		if(pastIfile == vo.getIfile()) {
+			int result = inquiryService.getUpdateNoFile(vo);
+			if(result==1) {
 			mv.setViewName("redirect:/inquiry_list.do");
-		}else {
-			mv.setViewName("errorpage");
+						
+			return mv;
+			}
+					
+		}else { 
+			//수정 시, 파일선택할 경우 새로운 파일 저장하기
+			int result = inquiryService.getUpdate(vo);
+					
+			if(result == 1) {
+			// 새로운 파일을 upload폴더에 저장 - 기존파일은 삭제됨
+				fileService.update_fileSave(vo, request, old_filename);
+				mv.setViewName("redirect:/inquiry_list.do");
+			}else {
+				mv.setViewName("errorpage");
+			}
+				
 		}
-		
-		return mv;
+				return mv;
 	}
 	
 	/**

@@ -257,7 +257,14 @@ public class HotelInquiryDAO extends DBConn{
 			return sqlSession.delete("mapper.inquiry.delete",iid);
 			
 		}
-				
+	
+	/**
+	 * updatenofile : 문의글 수정하기 (파일 선택 안할 시, 기존파일 유지)	
+	 */
+		public int updatenofile(HotelInquiryVO vo) {
+			return sqlSession.update("mapper.inquiry.updatenofile", vo);
+		}
+		
 	/**
 	 * update : 문의글 수정하기	
 	 */
