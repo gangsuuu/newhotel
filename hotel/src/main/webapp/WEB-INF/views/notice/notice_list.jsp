@@ -12,9 +12,6 @@
 <script src="http://localhost:9000/hotel/resources/js/am-pagination.js"></script>
 <link rel="stylesheet" href="http://localhost:9000/hotel/resources/css/index.css">
 <script>
-	var hotelname = "theshilla";
-</script>
-<script>
 	$(document).ready(function(){
 		
 		//페이징 리스트 출력
@@ -36,8 +33,8 @@
 		
 		//페이징 번호 클릭 시 이벤트 처리
 		jQuery('#ampaginationsm').on('am.pagination.change',function(e){
-			var search = "${search}"
 			var keyword = "${keyword}"
+			var search = "${search}"
 			if(search == "search"){
 				jQuery('.showlabelsm').text('The selected page no: '+e.page);
 		        $(location).attr('href', "http://localhost:9000/hotel/notice_list_search.do?rpage="+e.page);
@@ -52,12 +49,8 @@
 </head>
 <body>
 <%@ include file="../header.jsp" %>
-<<<<<<< HEAD
 <div class="content">
 <div class="common_wrap_yy">
-=======
-<div class="common_wrap_yy" style="top: 0px;">
->>>>>>> refs/remotes/origin/main
 	<div class="common_inner">
 		<div class="location" id="lnb"><ul>
 		<li><a href="http://localhost:9000/hotel/shillaStay.do">메인페이지</a></li>
@@ -66,7 +59,6 @@
 		</div>
 	</div>
 	</div>
-<div class="noticepage">
 	<!---------------------------------------------->
 	<!--------------- Content ---------------------->
 	<!---------------------------------------------->
@@ -108,6 +100,7 @@
 									<th>조회수</th>
 									<th>작성일</th>	
 								</tr>
+								
 					                <c:forEach var="vo"  items="${list}">
 								<tr>
 									<td>${vo.rno }</td>

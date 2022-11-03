@@ -52,12 +52,8 @@
 </head>
 <body>
 	<%@ include file="../header.jsp" %>
-<<<<<<< HEAD
 <div class="content">
 <div class="common_wrap_yy">
-=======
-<div class="common_wrap_yy" style="top: 0px;">
->>>>>>> refs/remotes/origin/main
 	<div class="common_inner">
 		<div class="location" id="lnb"><ul>
 		<li><a href="http://localhost:9000/hotel/shillaStay.do">메인페이지</a></li>
@@ -66,7 +62,6 @@
 		</div>
 	</div>
 </div>
-<div class="noticepage">
 
 	<!---------------------------------------------->
 	<!--------------- Content ---------------------->
@@ -113,7 +108,7 @@
 								<c:when test="${listSize == 0}">
 									<!-- 게시물 없을 때 출력 -->
 									<tr>
-										<td colspan="4" id="no"> 
+										<td colspan="6" id="no"> 
 											<img width="20%" src="http://localhost:9000/hotel/resources/img/inquiry/question.jpg">
 											<div id="nokeyword"><strong>"${keyword}"</strong>와(과) 일치하는 검색결과가 없습니다. </div>
 											<div id="solution"> 해결방법 : </div>
@@ -135,7 +130,7 @@
 								</tr>
 								</c:forEach>
 							</c:otherwise>
-						</c:choose>
+						</c:choose>								
 								<tr>
 	             					 <td colspan="4"><div id="ampaginationsm"></div></td>
               					</tr>
