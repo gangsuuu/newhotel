@@ -26,7 +26,10 @@ public class MyroomController {
 	@Autowired 
 	private PageServiceImpl pageService;
 	
-	
+	@RequestMapping(value = "room.do" , method = RequestMethod.GET)
+	public String room() {
+		return "/myroom/room";
+	}
 	@RequestMapping(value = "myroom.do",method = RequestMethod.GET)
 	public ModelAndView selectAll(String rpage,String mid) {
 		ModelAndView mv=new ModelAndView();
