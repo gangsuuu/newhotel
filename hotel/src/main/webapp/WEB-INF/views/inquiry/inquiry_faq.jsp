@@ -483,7 +483,7 @@ span .icon1 {background-position-x :0;}
 		</div>
 		
 			
-	
+	</div>
 	<!-- Footer Include -->
 	<%@ include file="../footer.jsp" %>
 	<script>

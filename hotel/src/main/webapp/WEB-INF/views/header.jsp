@@ -48,8 +48,7 @@
       </div>
          <div class='header_categori_container theme2_categori'>
             <ul class='header_maincategori_lists theme2_main'>
-               <div>
-                  <li class='header_maincategori theme2_after' >
+                  <li class='header_maincategori theme2_after' data-num="1" >
                      <a href='http://localhost:9000/hotel/shillaStay/accommodation/standard.do'>객실</a>
                      <ul class='header_subcategori_list theme2_sub_container' data-nav="rooms">
                         <li><a class='theme2_sub' id='header_subcategori' href='http://localhost:9000/hotel/shillaStay/accommodation/standard.do'>스탠다드</a></li>
@@ -59,14 +58,14 @@
                         <li><a class='theme2_sub' id='header_subcategori' href='http://localhost:9000/hotel/shillaStay/accommodation/allrooms.do'>전체 객실 보기</a></li>
                      </ul>
                   </li>
-                  <li class='header_maincategori theme2_after'>
+                  <li class='header_maincategori theme2_after' data-num="2">
                      <a href='http://localhost:9000/hotel/shillaStay/dining/resturant.do'>다이닝</a>
                      <ul class='header_subcategori_list theme2_sub_container' data-nav="restaurant">
                         <li><a class='theme2_sub' id='header_subcategori' href='http://localhost:9000/hotel/shillaStay/dining/resturant.do'>레스토랑</a></li>
                         <li><a class='theme2_sub' id='header_subcategori' href='http://localhost:9000/hotel/shillaStay/dining/lounge.do'>라운지 & 바</a></li>
                      </ul>
                   </li>
-                  <li class='header_maincategori theme2_after'>
+                  <li class='header_maincategori theme2_after' data-num="3">
                      <a href='http://localhost:9000/hotel/shillaStay/facilities/meetingRoom.do'>부대시설</a>
                      <ul class='header_subcategori_list theme2_sub_container' data-nav="facilites">
                         <li><a class='theme2_sub' id='header_subcategori' href='http://localhost:9000/hotel/shillaStay/facilities/meetingRoom.do'>미팅룸</a></li>
@@ -74,16 +73,16 @@
                         <li><a class='theme2_sub' id='header_subcategori' href='http://localhost:9000/hotel/shillaStay/facilities/fitnessRoom.do'>피트니스 센터</a></li>
                      </ul>
                   </li>
-                  <li class='header_maincategori theme2_after'>
+                  <li class='header_maincategori theme2_after' data-num="4">
                      <a href='#'>고객서비스</a>
                      <ul class='header_subcategori_list theme2_sub_container' data-nav="service">
                         <li><a class='theme2_sub' id='header_subcategori' href='#'>이벤트</a></li>
                         <li><a class='theme2_sub' id='header_subcategori' href='http://localhost:9000/hotel/notice_list.do'>공지사항</a></li>
                         <li><a class='theme2_sub' id='header_subcategori' href='http://localhost:9000/hotel/inquiry_list.do'>고객센터</a></li>
-                        <li><a class='theme2_sub' id='header_subcategori' href='#'>FAQ</a></li>
+                        <li><a class='theme2_sub' id='header_subcategori' href='http://localhost:9000/hotel/inquiry_faq.do'>FAQ</a></li>
                      </ul>
                   </li>
-                  <li class='header_maincategori theme2_after'>
+                  <li class='header_maincategori theme2_after' data-num="5">
                      <a href='#'>마이페이지</a>
                      <ul class='header_subcategori_list theme2_sub_container' data-nav="mypage">
                         <li><a class='theme2_sub' id='header_subcategori' href='http://localhost:9000/hotel/shillaStay/user/mypage.do'>마이페이지</a></li>
@@ -92,15 +91,12 @@
                         <li><a class='theme2_sub' id='header_subcategori' href='http://localhost:9000/hotel/shillaStay/user/myinfoEdit.do'>회원정보수정</a></li>
                      </ul>
                   </li>
-               </div>
-               <div>
                   <li class='header_maincategori_seach'>
                      <a class='theme2_main_seach' href='#'>위치찾기</a>
                   </li>
                   <li class='header_maincategori_res'>
                      <a class='theme2_main_res' href='http://localhost:9000/hotel/book.do'>예약</a>
                   </li>
-               </div>
             </ul>
          </div>
    </header>

@@ -637,8 +637,8 @@ background-color: white;
     padding: 11px 27px;
 	background-color: white;
     border:1px solid rgb(196,191,187);
-    transform
 }
+
 .join-marketing[type="checkbox"]:checked + label{
     border:1px solid rgb(156,131,106);
     background-color:  rgb(156,131,106);
@@ -667,3 +667,501 @@ background-color: white;
 	color: white;
 }
 
+
+
+
+/*******************************************
+                mypage
+*******************************************/
+.mypage-container{
+    width: 850px;
+}
+.mypage-top{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    border-top: 1px solid #cdcbbe;
+    border-bottom: 1px solid #cdcbbe;
+}
+.mypage-user-info{
+    width: 40%;
+}
+.mypage-user-info h3{
+    font-size:16px;
+    font-weight: 600;
+    color:rgb(88,88,88);
+    margin-top: 0;
+}
+.mypage-user-memberinfo{
+    margin-bottom: 20px;
+}
+.mypage-info {
+}
+.mypage-info li{
+    padding: 3px 0 3px 13px;
+    border-bottom:1px solid rgb(88,88,88);
+}
+.mypage-info li:first-child{
+    border-top: 1px solid rgb(88,88,88);
+}
+.mypage-info li>p:first-child{
+    background: linear-gradient(90deg, #ebe7e3, #ebe7e3);
+    width: 110px;
+    padding-left: 10px;
+    text-align: left;
+}
+.mypage-info p{
+    margin: 0;
+    padding:5px;
+    font-size: 13px;
+    display: inline-block;
+}
+
+.mypage-usecount{
+    display: flex;
+    justify-content: center;
+    gap:46px;
+    padding:0;
+    border-top:1px solid rgb(88,88,88);
+    border-bottom:1px solid rgb(88,88,88);
+}
+.mypage-usecount li{
+    margin: 20px 0;
+}
+.mypage-usecount li p{
+    text-align: center;
+    margin: 0;
+}
+.mypage-info-title{
+    font-size: 13px;
+    color:rgb(88,88,88)
+}
+.mypage-info-content{
+    font-size: 20px;
+    color:rgb(88,88,88)
+}
+.mypage-info-content span{
+    color:#998465
+}
+.mypage-membership{
+    display: flex;
+    position: relative;
+}
+.myapge-membership-left{
+    margin-left:50px;
+}
+.mypage-membership-img{    
+    padding-left: 55px;
+    width: 240px;
+    height: 260px;
+    margin-top: 30px;
+    background-image: url(http://localhost:9000/hotel/resources/img/account/img-grade.png);
+    background-position: 10px 0;
+    background-repeat: no-repeat;
+    background-size: 1158px;
+    float: left;
+    position: relative;
+}
+.mypage-membership-img::before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    width: 0;
+}
+.mypage-membership-img p{
+    position: absolute;
+    left: 32%;
+    transform: translate3d(-50%,-50%,0);
+    text-align: left;
+    width: 70px;
+}
+.mypage-membership-img p:first-child{
+    top:40%;
+    font-size: 11px;
+}
+.mypage-membership-img p:last-child{
+    top:48%;
+    font-size: 23px;
+}
+.mypage-membership-requirements{
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 52px;
+    margin-left: 23px;
+}
+.mypage-membership-requirements p{
+    font-size: 14px;
+    margin: 0;
+    color:rgb(88,88,88);
+    font-weight: 600;
+}
+.mypage-membership-requirements p span{
+    color:#8a7057;
+    font-weight: 600;
+}
+.mypage-membership-requirements p:first-child{
+    font-size: 12px;
+    position: relative;
+    color: #c0c0c0;
+    font-weight: 100;
+}
+.mypage-membership-requirements p:first-child::after{
+    content: "";
+    width: 1px;
+    height: 14px;
+    background-color: black;
+    display: inline-block;
+    position: absolute;
+    left: -13px;
+    top:2px;
+}
+.mypage-membership-advantage-container{
+	padding-bottom: 40px;
+	border-bottom:1px solid #cdcbbe;
+}
+.mypage-membership-advantage-container>h2{
+    font-size: 17px;
+    margin:30px 0;
+    text-align: center;
+}
+.mypage-membership-advantage-cards{
+    display: flex;
+    justify-content: space-between;
+    gap:2px
+}
+.mypage-membership-advantage-card{
+    background-color: #f5f5f5;
+    width: 211px;
+    height: 280px;
+    text-align: center;
+}
+.mypage-membership-advantage-card p {
+    margin: 0;
+    font-size: 9px;
+}
+
+.mypage-membership-advantage-level{
+ color: white;
+ font-size: 10px;
+ position: relative;
+}
+.membership-silver::after{
+    content: "";
+    width: 211px;
+    height: 80px;
+    padding: 10px 0;
+    background-color: #a7a7a7;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0%;
+    z-index: 1;
+}
+.membership-gold::after{
+    content: "";
+    width: 211px;
+    height: 130px;
+    padding: 10px 0;
+    background-color: #c59b5e;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0%;
+    z-index: 1;
+}
+.membership-platinum::after{
+    content: "";
+    width: 211px;
+    height: 259px;
+    padding: 10px 0;
+    background-color: #3c4767;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0%;
+    z-index: 1;
+}
+.mypage-membership-advantage-level h3{
+    margin-bottom: 10px;
+    padding-top:10px;
+    z-index: 11;
+    position: relative;
+
+}
+.mypage-membership-advantage-requirements{
+    background-color: white;
+    width: 180px;
+    margin: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 20px 0;
+    height: 40px;
+    position: relative;
+    z-index: 10;
+}
+.mypage-membership-advantage-requirements span{
+	
+	margin: 0 5px ;
+	width: 1px;
+	height: 8px;
+	border-left: 1px solid  rgb(88,88,88);
+	display: inline-block; 
+}
+
+.mypage-membership-advantage-requirements::after{
+    content:"";
+    width: 15px;
+    height: 1px;
+    display: inline-block;
+    border-bottom:1px solid black ;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.mypage-membershipt-advantage-benefit{
+    background-color: white;
+    width: 180px;
+    height: 130px;
+    padding-top: 10px;
+    margin: auto;
+    
+    position: relative;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: 10;
+}
+.mypage-mybooklist{
+   position: relative;	
+}
+
+.mypage-mybooklist>h2{
+    font-size: 17px;
+    margin:30px 0 60px 0;
+    text-align: center; 
+}
+.mypage-mybook-type{
+	position: absolute;
+	right:0;
+	top:35px;
+	width: 140px;
+	z-index: 10;
+}
+.mypage-mybook-type-list{
+	width: 130px;
+	padding: 10px 0 10px 8px;
+	border:1px solid red;
+	box-sizing: border-box;
+	background-color: white;
+
+}
+
+.mypage-mybook-container{
+    width: 850px;
+    border-top: 1px solid rgb(205,203,190);
+    border-bottom: 1px solid rgb(205,203,190);
+    margin-top:15px;
+    display: flex;
+}
+.mypage-mybook-left{
+    width: 350px;
+    margin: 10px;
+    background-color: red;
+    border-right: none;
+    box-sizing: content-box;
+    overflow: hidden;
+}
+.mypage-img{
+    width: 350px;
+}
+.mypage-mybook-right{
+    width: 500px;
+    box-sizing: content-box;
+}
+.mypage-mybook-right-top{
+    display: flex;
+    justify-content: space-between;
+    padding-left:20px;
+    height: 30px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.mypage-mybook-right-top p{
+    margin: 10px 0;
+}
+.mypage-mybook-right-mid{
+    position: relative;
+    padding:10px 0;
+}
+.mypage-mybook-info{
+    padding: 5px 20px 40px 20px;
+}
+.mypage-mybook-info-text{
+    position: relative;
+    word-spacing: 1px;
+    margin: 5px;
+    font-size: 13px;    
+}
+.mypage-mybook-info-text span{
+	margin: 0 5px ;
+	width: 1px;
+	height: 9px;
+	border-left: 1px solid  rgb(88,88,88);
+	display: inline-block; 
+}
+.mypage-mybook-bottom{
+    display: flex;
+    justify-content: end;
+    gap:5px;
+    margin-bottom:10px;
+    margin-right:5px; 
+    position: absolute;
+    align-items:flex-end;
+    bottom: 0;
+    right: 0;
+}
+.mypage-mybook-price{
+    font-size: 19px;
+    position: relative;
+    margin: 0;
+}
+.mypage-mybook-button{
+    width: 100px;
+    height: 30px;
+    font-size: 13px;
+    border: none;
+    color: rgb(125,120,115);
+    background-color: rgb(235,231,227);
+    transition: 300ms;
+}
+.mypage-mybook-button:hover{
+    background-color: #8a7057;
+    color: white;
+}
+
+/*******************************************
+                bookmark
+*******************************************/
+.bookmark-container{
+    width: 850px;
+    border-top: 1px solid rgb(205,203,190);
+    border-bottom: 1px solid rgb(205,203,190);
+    margin-top:40px;
+    display: flex;
+}
+.bookmark-left{
+    width: 270px;
+    margin: 10px;
+    background-color: red;
+    border-right: none;
+    box-sizing: content-box;
+    overflow: hidden;
+}
+.bookmark-img{
+    width: 270px;
+}
+.bookmark-mybook-left{
+    width: 350px;
+    margin: 10px;
+    background-color: red;
+    border-right: none;
+    box-sizing: content-box;
+    overflow: hidden;
+}
+.bookmark-right{
+    width: 500px;
+    box-sizing: content-box;
+}
+.bookmark-right-top{
+    display: flex;
+    justify-content: space-between;
+    padding-left:20px;
+    height: 30px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.bookmark-right-top p{
+    margin: 10px 0;
+}
+.bookmark-right-bookmark{
+    width: 60px;
+    position: relative;
+    margin: 0;
+}
+.bookmark-icon{
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    position: absolute;
+    transform: rotate(45deg);
+    top:17px; right:15px;
+    border-top-left-radius: 50%;
+
+}
+.bookmark-icon::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: -50%;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+.bookmark-icon::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: -50%;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+.bookmark-right-mid{
+    position: relative;
+    padding:10px 0;
+}
+.bookmark-info{
+    padding: 5px 20px 40px 20px;
+}
+.bookmark-info-text{
+    position: relative;
+    word-spacing: 1px;
+    margin: 5px;
+    font-size: 13px;
+    
+}
+.bookmark-bottom{
+    display: flex;
+    justify-content: end;
+    gap:5px;
+    margin-bottom:10px;
+    margin-right:5px; 
+    position: absolute;
+    align-items:flex-end;
+    bottom: 0;
+    right: 0;
+}
+.bookmark-price{
+    font-size: 19px;
+    position: relative;
+    margin: 0;
+}
+.bookmark-price span{
+    font-size: 14px;
+}
+.bookmark-button{
+    width: 100px;
+    height: 30px;
+    font-size: 13px;
+    border: none;
+    color: rgb(125,120,115);
+    background-color: rgb(235,231,227);
+    transition: 300ms;
+}
+.bookmark-button:hover{
+    background-color: #8a7057;
+    color: white;
+}
