@@ -116,7 +116,7 @@ public class AccountController {
 	/**
 	 *  øπæ‡»Æ¿Œƒ¡≈Ÿ√˜
 	 */
-	@RequestMapping(value="shillaStay/user/mybook.do", method=RequestMethod.GET)
+	@RequestMapping(value="shillaStay/user/mybooking.do", method=RequestMethod.GET)
 	public String mybookcontent() {
 		return "user/mypage/mybook_content";
 	}

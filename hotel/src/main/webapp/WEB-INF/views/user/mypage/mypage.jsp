@@ -21,7 +21,7 @@
 				  <h2 class="suject">마이페이지</h2>
 	              <ul>
 		              <li id="content_list_one"><a href="http://localhost:9000/hotel/shillaStay/user/mypage.do" class="content_list content_selected">마이페이지</a></li>
-		              <li id="content_list_one"><a href="http://localhost:9000/hotel/shillaStay/user/mybooklist.do" class="content_list">예약확인</a></li>
+		              <li id="content_list_one"><a href="http://localhost:9000/hotel/shillaStay/user/mybooklist.do" class="content_list">이용내역확인</a></li>
 		              <li id="content_list_one"><a href="http://localhost:9000/hotel/shillaStay/user/mybookmarke.do" class="content_list">북마크</a></li>
 		              <li id="content_list_one"><a href="http://localhost:9000/hotel/shillaStay/user/myinfoEdit.do" class="content_list">회원정보수정</a></li>
 	              </ul>
@@ -175,14 +175,8 @@
 	                </div>
 	            </div>
 	            <div class="mypage-mybooklist">
-	            	<h2>이용내역</h2>
+	            	<h2>사용예정</h2>
 	            	<div class="mypage-mybook-type">
-	            		<ul>
-	            			<li class="mypage-mybook-type-list">전체보기</li>
-	            			<li class="mypage-mybook-type-list">예약중</li>
-	            			<li class="mypage-mybook-type-list">사용중</li>
-	            			<li class="mypage-mybook-type-list">사용완료</li>	            			
-	            		</ul>
 	            	</div>
 	            	<ul>
 	            		<li>
