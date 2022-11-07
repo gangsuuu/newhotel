@@ -199,7 +199,7 @@ position: relative;
 
 /***********************************/
 
-.icon1 {background: url(http://localhost:9000/hotel/resources/img/inquiry/FAQ.png) center 0 no-repeat;}
+.icon1 {background: url(http://localhost:9000/hotel/resources/img/inquiry/FAQ.png);}
 span .icon1 {background-position-x :0;}
 </style>
 
