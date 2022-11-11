@@ -140,15 +140,6 @@
 		display: flex;
 		margin: 0
 	}
-	.header_maincategori::before{
-		    content: "";
-	    display: block;
-	    height: 40px;
-	    width: 100%;
-	    position: absolute;
-	    background-color:red;
-		
-	}
 	.header_maincategori_lists a:hover {
 	    color: white;
 	}

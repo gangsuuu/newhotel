@@ -95,7 +95,7 @@
                      <a class='theme2_main_seach' href='#'>위치찾기</a>
                   </li>
                   <li class='header_maincategori_res'>
-                     <a class='theme2_main_res' href='http://localhost:9000/hotel/book.do'>예약</a>
+                     <a class='theme2_main_res' href='http://localhost:9000/hotel/shillaStay/reservation.do'>예약</a>
                   </li>
             </ul>
          </div>
