@@ -116,6 +116,7 @@ public class InquiryController {
 		//System.out.println(iid);
 		//System.out.println(pass);
 		
+		System.out.println("¿€µø");
 		int result = inquiryService.getPassCheck(iid, pass);
 		String checkedpass ="fail";
 		if(result == 1) {

@@ -1,0 +1,260 @@
+#roomedit-img{
+	display: none;
+}
+.admin-roomedit-showtype{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.admin-roomedit-list{
+    display: flex;
+}
+.admin-roomedit-select{
+    margin: 0;
+}
+.admin-roomedit-list a{
+    width: 75px;
+    height: 20px;
+    display: inline-block
+}
+.admin-roomedit-btns{
+    margin: 0;
+}
+.admin-roomedit_btn_style{
+    font-size: 15px;
+    text-align: center;
+    height: 27px;
+    width: 73px;
+    padding: 5px 15px;
+    background: #ebe7e3;
+    border: 0 none;
+    font-size: 13px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    transition: background-color 250ms;
+}
+.admin-roomedit_btn_style:hover{
+    background-color: #cdcbbe;
+}
+.admin-roomedit-roomtable{
+    margin-top: 20px;
+}
+.admin-roomedit-roomtable-table{
+    border-collapse: collapse;
+}
+.admin-roomedit-roomtable-table tr{
+  border-bottom: 1px solid #cdcbbe;
+
+}
+.admin-roomedit-roomtable-table th{
+    border-top: 1px solid #cdcbbe;
+    background-color: #ebe7e3;
+}
+.admin-roomedit-roomtable-table td:not(.admin-roomedit-rowspan){
+    border-left:1px solid #cdcbbe;
+    padding: 3px 7px 3px 5px;
+    font-size: 13px;
+}
+.admin-roomedit-roomtable-table th:not(:first-child){
+    border-left:1px solid #cdcbbe;
+    font-size: 13px;
+    padding: 4px 0;
+}
+.admin-roomedit-roomtable-table th:nth-child(2){
+    width: 130px;
+}
+.admin-roomedit-roomtable-table th:nth-child(3){
+    width: 65px;
+}
+.admin-roomedit-roomtable-table th:nth-child(n+4){
+    width: 120px;
+}
+.admin-roomedit-rowspan{
+    background-color: #ebe7e3;
+    width: 50px;
+    text-align: center;
+    font-weight: 600;
+    color: black
+}
+.roomtable-detail{
+    text-align: right;
+}
+.admin-roomedit-roomtable-table {
+
+}
+.roomtable-bedtype, .roomtable-able{
+    text-align: center;
+}
+.roomtable-price,.roomtable-guestnum,.roomtable-detail{
+    text-align: right;
+}
+.roomtable-price span,.roomtable-detail span,.roomtable-guestnum{
+    margin-left: 5px;
+}
+.admin-roomedit-modaltitle{
+    color: white;
+}
+.admin-roomedit-modaltitle h3{
+}
+.admin-roomedit-modalcontent{
+    background-color:white;
+    width: auto; height:auto; 
+    padding: 15px 25px ;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+.admin-roomedit-top{
+    display: flex;
+    justify-content: space-between;
+    gap:20px
+}
+.amdin-roomedit-roomimg{
+    border:1px solid #aaa;
+    width: 250px;
+    height: 150px;
+    text-align: center;
+    align-items: center;
+    transition-duration: 250ms;
+    position: relative;
+    overflow: hidden;
+}
+.roomedit-imgshow{
+	width: 250px;
+}
+.amdin-roomedit-roomimg p{
+    position: absolute;
+    width: 100%;
+    top:50%;    left:50%;
+    transform: translate3d(-50%,-50%,0);
+
+}
+.amdin-roomedit-roomimg:hover{
+    border:1px solid blue;
+}
+
+.admin-roomedit-img{
+    margin: 0;
+}
+.admin-roomedit-img div{
+    margin: 0;
+}
+.admin-roomedit-img::after{
+    content: "";
+    border-left:1px dotted #856f56;
+    width: 1px; height: 156px;
+    display: inline-block;
+    position: absolute;
+    left:46%;
+    top:15%;
+     
+}
+.admin-roomedit-roomtype{
+    margin: 0;
+}
+.admin-roomedit-roomtype  li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap:30px
+}
+.admin-roomedit-roomtype li:not(:last-child) span{
+    font-size: 14px;
+    margin: 0;
+    width: 75px;
+}
+.admin-roomedit-roomtype li:last-child div{
+    margin: 0;
+}
+.admin-roomedit-roomtype li:last-child div:first-child span{
+    margin-right: 10px;
+
+}
+.admin-roomedit-roomtype li:last-child div:nth-child(2) span:first-child{
+    margin-right: 10px;
+
+}
+.admin-roomedit-input{
+    border: 1px solid #CCCCCC;
+    padding:5px;
+    margin: 0;
+}
+.admin-roomedite-input:hover{
+    border : 1px solid #aaaaaa;
+}
+.admin-roomedit-input:focus{
+    outline: none;
+    border : 1px solid #856f56;
+}
+.roomedit-view, .roomedit-floor, .roomedit-roomnum, .roomedit-bed {
+    width: 100px;
+    box-sizing: border-box;
+}
+
+.admin-roomedit-under{
+    margin-top: 30px;   
+}
+.admin-roomedit-pricetable{
+    border-collapse: collapse;;
+}
+.admin-roomedit-pricetable tr{
+    border-bottom: 1px solid #cdcbbe;
+}
+.admin-roomedit-pricetable td:not(:first-child){
+    border-left: 1px solid #cdcbbe;
+}
+.admin-roomedit-pricetable th{
+    border-top: 1px solid #cdcbbe;
+    background-color: #ebe7e3;
+    padding:5px 0;
+    font-size: 14px;
+}
+.admin-roomedit-pricetable th:not(:first-child){
+    border-left: 1px solid #cdcbbe;
+}
+
+.admin-roomedit-pricetable td:first-child{
+    width: 100px;
+    text-align: center;
+}
+.admin-roomedit-pricetable td{
+    padding:5px;
+    height: 30px;
+    font-size: 14px;
+}
+.roomedit-other{
+    text-align: center;
+    font-size: 12px;
+    width: 100px;
+}
+.roomedit-price{
+    border:none;
+    width: 130px;
+    padding:0 5px;
+    text-align: right;
+}
+.roomedit-roomsizebox{
+    display: flex;
+}
+.roomedit-roomsize{
+    width: 50px;
+    text-align: right;
+    border:none;
+}
+.roomedit-usercount{
+    border:none;
+    width: 30px;
+    -webkit-appearance:none; /* 화살표 없애기 for chrome*/
+	-moz-appearance:none; /* 화살표 없애기 for firefox*/
+	appearance:none /* 화살표 없애기 공통*/
+}
+.roomedit-price:focus,.roomedit-usercount:focus,.roomedit-roomsize:focus{
+    outline: none;
+    border: none;
+}
+.roomedit-usercount{
+    text-align: right;
+}
+.roomedit-btn{
+	margin: 10px auto 0;
+	text-align: center;
+}

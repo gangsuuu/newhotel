@@ -242,6 +242,7 @@ public class AdminController {
 			}
 						
 		}
+		
 		return mv;
 	}
 	
@@ -253,13 +254,13 @@ public class AdminController {
 	public ModelAndView admin_inquiry_update(String iid) {
 		ModelAndView mv = new ModelAndView();
 		
-		HotelInquiryVO vo = inquiryService.getContent(iid);
+		//HotelInquiryVO vo = inquiryService.getContent(iid);
 		//System.out.println(vo.getContent());
 		
 		//DB에 <br/>를 \r\n으로 변경해서 vo에 content에 넣어줘서 보여준다.
-		vo.setContent(vo.getContent().replace("<br/>", "\r\n"));
+		//vo.setContent(vo.getContent().replace("<br/>", "\r\n"));
 		
-		mv.addObject("vo", vo);
+		//mv.addObject("vo", vo);
 		mv.setViewName("/admin/admin_inquiry_update");
 		return mv;
 	}	
